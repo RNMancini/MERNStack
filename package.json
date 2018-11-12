@@ -1,0 +1,15 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "social network for development",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Rebecca Mancini",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
