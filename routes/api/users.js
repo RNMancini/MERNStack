@@ -87,10 +87,17 @@ router.post('/login', (req, res) => {
                 } else {
                     return res.status(400).json({password: 'Password incorrect'});
                 }
-            })
+            });
             
         });
-});
+    });
 
+router.get(
+    '/current', 
+    passport.authenticate('jwt', { session: false }), 
+    (req, res) => {
+  res.json(req.user);  
+
+});
 
 module.exports = router;
